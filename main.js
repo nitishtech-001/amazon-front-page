@@ -30,24 +30,7 @@ next_btn.addEventListener("click",()=>{
 
 });
 
-/* MAKING SLIDER IMAGES AUTOMTICALLY SLIDE AFTER 2 SECOND */
-/* 
-let currentIndex = 0;
-const slides = document.querySelectorAll('.product-slider img');
 
-function showNextSlide() {
-    currentIndex = (currentIndex + 1) % slides.length;
-    const offset = -currentIndex * 100;
-    document.querySelector('.slides').style.transform = `translateX(${offset}%)`;
-}
-
-// Initial call to show the first slide
-showNextSlide();
-
-// Automatically switch slides every 3 seconds
-setInterval(showNextSlide, 3000);
-
- */
 /* MAKING THE PRODUCt SCROLL WITH MOUSE WHEEL */
 const scrollContainer=document.querySelectorAll(".products");
 for(const item of scrollContainer){
@@ -56,41 +39,4 @@ for(const item of scrollContainer){
         item.scrollLeft +=evt.deltaY;
     })
 }
-
-/* 
-const margin = getMarginBetween(prev_btn,box_row);
-
-function getMarginBetween(div1, div2) {
-    const rect1 = div1.getBoundingClientRect();
-    const rect2 = div2.getBoundingClientRect();
-    
-    const margin = Math.abs(rect1.bottom - rect2.top);
-    if(margin >=2){
-        div2.style.mergin.top=margin;
-    }
-    return margin;
-}
-const box_row=document.querySelector(".box-row1");
-
-
-console.log(`Margin between divs: ${margin}px`); 
-*/
-
-/* const box_row=document.querySelector(".box-row1");
-const header_img=document.querySelector(".slider-img");
-
-let imgHeight=header_img.clientHeight;
-console.log(imgHeight);
-if(imgHeight>420){
-    let margin=-110-(imgHeight-420);
-    console.log(margin);
-    box_row.style.marginTop=margin;
-} */
-// if(headre_img.clientHeight-box_row.clientHeight >=250){
-//     box.style.marginTop=-250;
-// }
-
-
-// MAkeing all below body blur 
-
 
